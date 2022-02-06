@@ -1,12 +1,12 @@
 import React from 'react';
 import './App.css';
 
-function App() {
-  return (
-    <div className="App">
-
-    </div>
-  );
+export const App: React.FC = () => {
+   return (
+      <div>
+         App running
+      </div>
+   )
 }
 
-export default App;
+
