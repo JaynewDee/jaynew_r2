@@ -4,7 +4,7 @@ import { Main } from './pages/Main'
 import CSS from 'csstype';
 
 interface MainType {
-   style?: {}
+   style?: CSS.Properties,
    name: string
 }
 

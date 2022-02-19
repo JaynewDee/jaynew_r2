@@ -1,6 +1,7 @@
 import React from 'react';
 import CSS from 'csstype';
 import Sidebar from '../components/Sidebar'
+import Navbar from '../components/Navbar'
 
 
 
@@ -10,6 +11,7 @@ interface MainInterface {
 }
 
 export const Main: React.FC<MainInterface> = () => {
+   
    const mainContStyles: CSS.Properties = {
       display: 'flex',
       height: '5em',
@@ -22,6 +24,7 @@ export const Main: React.FC<MainInterface> = () => {
 
   return(
    <>
+      <Navbar />
       <Sidebar />
       <div style={mainContStyles}></div>
    </>
