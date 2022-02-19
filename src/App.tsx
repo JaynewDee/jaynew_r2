@@ -3,18 +3,18 @@ import './App.css';
 import { Main } from './pages/Main'
 import CSS from 'csstype';
 
-const mainContStyles: CSS.Properties = {
-   display: 'flex',
+interface MainType {
+   style?: {}
+   name: string
 }
 
-interface mainType {
-   style?: {}
-}
-export const App: React.FC = () => {
+export const App: React.FC<MainType> = (props) => {
+   const mainStyles = {
+      color: 'white'
+   }
+   
    return (
-      <div>
-         <Main></Main>
-      </div>
+         <Main style={mainStyles}>{props.name}</Main>
    )
 }
 
