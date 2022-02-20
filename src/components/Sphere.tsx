@@ -1,6 +1,6 @@
 import React from 'react'
 
-const Sphere = () => {
+const Sphere:React.FC = () => {
   return (
    <div id="circleBox">
     <div id="outerCircle">

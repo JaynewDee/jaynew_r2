@@ -10,8 +10,8 @@ interface MainType {
    name: string
 }
 
-export const App: React.FC<MainType> = (props) => {
-   console.log(props)
+export const App: React.FC<MainType> = () => {
+  
    
    
    return (
