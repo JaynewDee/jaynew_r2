@@ -1,7 +1,9 @@
 import React from 'react';
-import './App.css';
-import { Main } from './pages/Main'
+import './App.scss';
+// import { Main } from './pages/Main'
 import CSS from 'csstype';
+import Sidebar from './components/Sidebar';
+import Navbar from './components/Navbar';
 
 interface MainType {
    style?: CSS.Properties,
@@ -9,12 +11,21 @@ interface MainType {
 }
 
 export const App: React.FC<MainType> = (props) => {
-   const mainStyles = {
-      color: 'white'
-   }
+   
    
    return (
-         <Main style={mainStyles}>{props.name}</Main>
+      <>
+         <Navbar/>
+         <Sidebar />
+
+         <div id="mainCont">
+
+            Hello, world!
+
+         </div>
+         
+      </>
+
    )
 }
 
