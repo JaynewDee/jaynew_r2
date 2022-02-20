@@ -11,6 +11,7 @@ interface MainType {
 }
 
 export const App: React.FC<MainType> = (props) => {
+   console.log(props)
    
    
    return (
