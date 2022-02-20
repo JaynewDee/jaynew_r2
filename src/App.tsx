@@ -1,9 +1,9 @@
 import React from 'react';
 import './App.scss';
-// import { Main } from './pages/Main'
 import CSS from 'csstype';
 import Sidebar from './components/Sidebar';
 import Navbar from './components/Navbar';
+import Sphere from './components/Sphere'
 
 interface MainType {
    style?: CSS.Properties,
@@ -15,6 +15,7 @@ export const App: React.FC<MainType> = (props) => {
    
    return (
       <>
+         <Sphere/>
          <Navbar/>
          <Sidebar />
 
