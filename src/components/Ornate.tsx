@@ -6,8 +6,7 @@ const Ornate = () => {
       <div className="angle" id="tri5"></div>
       <div className="angle" id="tri4"></div>
       <div className="angle" id="tri3"></div>
-      <div className="angle" id="tri2"></div>
-      <div className="angle" id="tri1"></div>
+      
    </>
   )
 }

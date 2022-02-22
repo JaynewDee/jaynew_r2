@@ -1,12 +1,16 @@
-import React from 'react';
+import React, { useState } from 'react';
+import { GiDivingDagger as dagger} from 'react-icons/gi'
 
-const props = {
-   subject: ['arrow', 'sword', 'dagger', 'cross', ]
-}
-const navItem = ({}) => {
+
+const NavItem:React.FC = () => {
+
+  
+
   return (
-    <div></div>
+    <div id="dagger-div">
+       {dagger}
+    </div>
   )
 }
 
-export default navItem;
+export default NavItem;
