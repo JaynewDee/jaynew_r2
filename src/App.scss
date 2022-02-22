@@ -11,128 +11,133 @@ $brygada: "Brygada 1918", serif;
 $dosis: "Dosis", sans-serif;
 $josefin: "Josefin Sans", sans-serif;
 $zenkaku: "Zen Kaku Gothic Antique", sans-serif;
-$size-divise: 2;
+$size-divide: 2;
 
 :root {
   overflow-x: hidden;
+  background: $bgColor;
 }
 
 #circleBox {
-   position: fixed;
-   height: calc(3.15em/$size-divise);
-   width: calc(3.15em/$size-divise);
-   top: 0;
-   border-radius: 50%;
-   // border-right: .1em solid $headerColor;
-   // border-bottom: .em solid $headerColor;
-   box-shadow: inset -2.5px -2.5px 3px 1px $headerColor, 3.5px 3.5px 5px 0px #093533;
-   
-   #outestCircle {
-     height: calc(8.1em/$size-divise);
-     width: calc(8.1em/$size-divise);
-     position: fixed;
-     top: 18px;
-     left: 18px;
-     border-radius: 50%;
-     border: 1px solid $headerColor;
-     box-shadow: inset 1px 1px 5px 5px $headerColor;
-   }
- 
-   #outerCircle {
-     height: calc(5em/$size-divise);
-     width: calc(5em/$size-divise);
-     position: fixed;
-     top: 27.8px;
-     left: 27.8px;
-     border-radius: 50%;
-     border: 3.5px solid $tertiary;
-     box-shadow: .5px .5px 5px 5px $tertiary;
-     animation: rotate 20s linear 0s infinite;
+  position: fixed;
+  height: calc(3.15em / $size-divide);
+  width: calc(3.15em / $size-divide);
+  top: 0;
+  border-radius: 50%;
+  // border-right: .1em solid $headerColor;
+  // border-bottom: .em solid $headerColor;
+  box-shadow: inset -2.5px -2.5px 3px 1px $headerColor,
+    3.5px 3.5px 5px 0px #093533;
 
-     
- 
-     #innerCircle {
-       height: calc(2em/$size-divise);
-       width: calc(2em/$size-divise);
-       top: 3.48px;
-       left: 3.48px;
-       position: relative;
-       border-radius: 50%;
-       opacity: 1;
-       box-shadow: inset 2px 2px 5px 2px $headerColor;
-       animation: none;
- 
-       #centerCircle {
-         top: -7.2px;
-         left: -7.2px;
-         height: calc(.8em/$size-divise);
-         width: calc(.8em/$size-divise);
-         position: relative;
-         border-radius: 0 100%;
-         background: white;
-         opacity: .85;
-         box-shadow: -1px -1px 1px 1px $headerColor;
+  #outestCircle {
+    height: calc(8.1em / $size-divide);
+    width: calc(8.1em / $size-divide);
+    position: fixed;
+    top: calc(2.8em / $size-divide);
+    left: calc(2.8em / $size-divide);
+    border-radius: 50%;
+    border: 1px solid $headerColor;
+    box-shadow: inset 1px 1px 5px 5px $headerColor;
+  }
+
+  #outerCircle {
+    height: calc(5em / $size-divide);
+    width: calc(5em / $size-divide);
+    position: fixed;
+    top: 2.05em;
+    left: 2.05em;
+    border-radius: 50%;
+    border: 3.5px solid $tertiary;
+    box-shadow: 0.5px 0.5px 5px 5px $tertiary;
+    animation: rotate 20s linear 0s infinite;
+
+    #innerCircle {
+      height: calc(2em / $size-divide);
+      width: calc(2em / $size-divide);
+      top: 3.48px;
+      left: 3.48px;
+      position: relative;
+      border-radius: 50%;
+      opacity: 1;
+      box-shadow: inset 2px 2px 5px 2px $headerColor;
+      animation: none;
+
+      #centerCircle {
+        top: -7.2px;
+        left: -7.2px;
+        height: calc(0.8em / $size-divide);
+        width: calc(0.8em / $size-divide);
+        position: relative;
+        border-radius: 0 100%;
+        background: white;
+        opacity: 0.85;
+        box-shadow: -1px -1px 1px 1px $headerColor;
       }
-     }
-   }
- }
+    }
+  }
+}
 
 #navbar {
   display: flex;
-  height: calc(10.4em/$size-divise);
+  height: calc(10.4em / $size-divide);
   width: 100%;
   position: fixed;
   top: 0;
-  //   overflow: hidden;
-  background: $bgColor;
+  background: $highlight;
   box-shadow: 5px 2px 8px 1.5px $headerColor;
   z-index: 1;
   left: 7em;
-  border-radius: 0 0 0 0px;
+  border-left: 0.2em solid $headerColor;
+  border-bottom: 0.2em solid $headerColor;
+
 }
 
 #sidebar {
   display: flex;
   position: fixed;
   height: 100%;
-  width: calc(10.4em/$size-divise);
+  width: calc(10.4em / $size-divide);
   box-shadow: 2px 5px 8px 1.5px $headerColor;
   left: 0;
-  background: $bgColor;
+  background: $highlight;
   z-index: 1;
   top: 7em;
+  border-top: 0.2em solid $headerColor;
+  border-right: 0.2em solid $headerColor;
 }
 
 .angle {
-   position: fixed;
-   z-index: 0;
-   transform: rotate(-45deg)
-   
+  width: 0;
+  height: 0;
+  position: fixed;
+  z-index: 0;
+  transform: rotate(-45deg);
 }
 
 #tri5 {
-  width: 0; 
-  height: 0; 
-  border-left: 2em solid transparent;
-  border-right: 2em solid transparent;
-  border-top: 2em solid $tertiary;
-  top: 5.9em;
-  left: 5.25em;
-   
+  border-left: calc(2.5em / $size-divide * 1) solid transparent;
+  border-right: calc(2.5em / $size-divide * 1) solid transparent;
+  border-top: calc(2.5em / $size-divide * 1) solid $tertiary;
+  top: 6em;
+  left: 5.37em;
+  z-index: 5;
+}
 
-   #tri4 {
-      background: $headerColor;
-
-      #tri3 {
-
-         #tri2 {
-
-            #tri1 {
-
-            }
-         }
-      }
-   }
+#tri4 {
+  border-left: calc(2.5em / $size-divide * 1.5) solid transparent;
+  border-right: calc(2.5em / $size-divide * 1.5) solid transparent;
+  border-top: calc(2.5em / $size-divide * 1.5) solid $headerColor;
+  top: 6.37em;
+  left: 5.42em;
+  z-index: 4;
+}
+#tri3 {
+  border-left: calc(2.5em / $size-divide * 2) solid transparent;
+  border-right: calc(2.5em / $size-divide * 2) solid transparent;
+  border-top: calc(2.5em / $size-divide * 2) solid $tertiary;
+  top: 6.75em;
+  left: 5.47em;
+  z-index: 3;
 }
 
 #mainCont {
@@ -140,9 +145,9 @@ $size-divise: 2;
   height: 100vh;
   width: 100%;
   position: relative;
-  margin: 40px 0px 0px 40px;
-  font-size: calc(2em/$size-divise);
-  padding: 40px;
+  margin: 2.5em 0 0 2.5em;
+  font-size: calc(2em / $size-divide);
+  padding: 2.5em;
   z-index: -5;
   font-family: $josefin;
   font-weight: 800;
@@ -150,28 +155,31 @@ $size-divise: 2;
 }
 
 @keyframes rotate {
-   from {transform: rotate(-360deg);}
-   to{transform: rotate(360deg)}
+  from {
+    transform: rotate(-360deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
 }
 
-
-@media screen and (min-width: 576px) {
-   :root {
-     $size-divise: 5;
-   }
- }
- @media screen and (min-width: 768px) {
-   :root {
-     $size-divise: 4;
-   }
- }
- @media screen and (min-width: 992px) { 
-   :root {
-     $size-divise: 3;
-   }
- }
- @media screen and (min-width: 1200px) { 
-   :root {
-      $size-divise: 2;
-   }
- }
+@media screen and (max-width: 576px) {
+  :root {
+    $size-divide: 2;
+  }
+}
+@media screen and (max-width: 768px) {
+  :root {
+    $size-divide: 3;
+  }
+}
+@media screen and (max-width: 992px) {
+  :root {
+    $size-divide: 4;
+  }
+}
+@media screen and (max-width: 1200px) {
+  :root {
+    $size-divide: 5;
+  }
+}
