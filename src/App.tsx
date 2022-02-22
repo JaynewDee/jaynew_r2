@@ -4,6 +4,7 @@ import CSS from 'csstype';
 import Sidebar from './components/Sidebar';
 import Navbar from './components/Navbar';
 import Sphere from './components/Sphere'
+import Ornate from './components/Ornate'
 
 interface MainType {
    style?: CSS.Properties,
@@ -21,8 +22,8 @@ export const App: React.FC<MainType> = () => {
          <Sidebar />
 
          <div id="mainCont">
-
-            Hello, world!
+            <Ornate/>
+               
 
          </div>
          

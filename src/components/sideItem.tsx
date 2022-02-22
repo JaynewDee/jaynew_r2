@@ -1,10 +1,10 @@
 import React from 'react'
 
-const sideItems:React.FC = (props) => {
+const sideItem:React.FC = (props) => {
    
   return (
     <div></div>
   )
 }
 
-export default sideItems;
+export default sideItem;
