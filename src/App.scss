@@ -1,10 +1,10 @@
 @import './_Items.scss';
 
-$bgColor: #fbf3e4;
-$headerColor: #105652;
-$paragraph: #5f6c7b;
-$highlight: #dfd8ca;
-$tertiary: #b91646;
+$bgColor: #171717;
+$headerColor: #ededed;
+// $paragraph: #;
+$highlight: #444444;
+$tertiary: #da0037;
 $brygada: "Brygada 1918", serif;
 $dosis: "Dosis", sans-serif;
 $josefin: "Josefin Sans", sans-serif;
@@ -35,7 +35,7 @@ $size-divide: 2;
     left: calc(2.8em / $size-divide);
     border-radius: 50%;
     border: 1px solid $headerColor;
-    box-shadow: inset 1px 1px 5px 5px $headerColor;
+    box-shadow: inset 2px 2px 5px 5px $headerColor;
   }
 
   #outerCircle {
@@ -47,7 +47,7 @@ $size-divide: 2;
     border-radius: 50%;
     border: 3.5px solid $tertiary;
     box-shadow: 0.5px 0.5px 5px 5px $tertiary;
-    animation: rotate 20s linear 0s infinite;
+    animation: rotate 120s linear 0s infinite;
 
     #innerCircle {
       height: calc(2em / $size-divide);
@@ -90,6 +90,12 @@ $size-divide: 2;
   border-bottom: 0.2em solid $headerColor;
 
 }
+
+#dateBox {
+   width: auto;
+   font-size: .5em;
+}
+
 
 #sidebar {
   display: flex;

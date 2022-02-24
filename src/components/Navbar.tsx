@@ -11,13 +11,10 @@ const Navbar:React.FC = () => {
   return (
      <>
     <div id="navbar">
-       <NavItem icons={icons}/>
+       <NavItem />
     </div>
     </>
   )
 }
 
 export default Navbar;
-
-
-
