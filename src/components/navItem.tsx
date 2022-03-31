@@ -1,15 +1,13 @@
 import React, { useState } from 'react';
+import { Owl, Fox } from './Icons'
 
+const NavItem = () => {
 
-const NavItem:React.FC = () => {
-
-  
-
-  return (
-    <div className="navItem">
-       
-    </div>
-  )
+   return (
+      <div>
+         
+      </div>
+   )
 }
 
 export default NavItem;

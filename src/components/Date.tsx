@@ -3,21 +3,11 @@ import dayjs from 'dayjs';
 
 
 const DateTick:React.FC = () => {
-   // function byTheSecond() {
-   //    return setInterval((
-          
-   //    ), 1000)
-   // }
-   function getTime() {
-      return dayjs()
-   }
-   let now = getTime();
 
-   // let timestamp = byTheSecond()
-   console.log(now)
+   let now = dayjs().format('MMM D YYYY hh:mm a')
 
   return (
-    <div id="dateBox">{now[5]}</div>
+    <div id="dateBox">{now}</div>
   )
 }
 

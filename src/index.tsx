@@ -6,7 +6,7 @@ import reportWebVitals from './reportWebVitals';
 
 ReactDOM.render(
   <React.StrictMode>
-    <App name="Joshua Diehl"/>
+    <App name="Joshua Newell"/>
   </React.StrictMode>,
   document.getElementById('root')
 );

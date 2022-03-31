@@ -1,12 +1,14 @@
 import React, { useState } from 'react'
+import { IconType } from 'react-icons/lib';
 import NavItem from './navItem';
-import { GiDivingDagger as dagger} from 'react-icons/gi'
 
-const Navbar:React.FC = () => {
-   const [icons, setIcons] = useState([
-      { title: 'dagger', icon: dagger, id: 'dagger', key: 1},
-      
-   ])
+interface navigation {
+   icons: IconType[]
+}
+
+
+const Navbar:React.FC<navigation> = () => {
+   
 
   return (
      <>
